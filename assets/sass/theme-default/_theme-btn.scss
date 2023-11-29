@@ -95,19 +95,26 @@
 
 
   &.style5 {
-    background-color: transparent;
+    background-color: white;
+    color: $title-color;
     border: 2px solid $white-color;
     padding: 6px 8px 8px 45px;
+
+    i { 
+      background-color: $theme-color; 
+      color: $white-color;
+    }
+
 
     &:after {
       display: none;
     }
 
     &:hover {
-      color: $title-color;
-      background-color: $white-color;
+      color: $white-color;
+      background-color: $theme-color; 
 
-      i {
+      i { 
         background-color: $theme-color;
         color: $white-color
       }

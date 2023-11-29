@@ -82,9 +82,18 @@ a {
 	transition: all ease 0.4s;
 
 	&:hover {
-		color: $body-color;
+		color: $body-color; 
 	}
+
+	
+
 }
+.categoria-seleccionada{ 
+	&:hover {
+		background-color: #76a71330;
+	} 
+}
+
 
 a:active,
 a:focus,

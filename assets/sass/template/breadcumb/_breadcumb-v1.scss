@@ -25,10 +25,12 @@
     }
 
     &:after {
-      content: '/';
+      content: '>';
       position: relative;
       right: -7px;
       float: right;
+      font-weight: bold;
+      color: var(--theme-color);
     }
   }
 
@@ -38,16 +40,19 @@
     white-space: normal;
     word-break: break-word;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: $title-font;
     color: $body-color;
     font-weight: 600;
     line-height: 1;
     font-size: 16px;
-    
+    font-size: 20px;
     i {
       margin-right: 5px;
     }
+  } 
+  a:hover{
+    color: var(--theme-color);
   }
 
 }
@@ -58,16 +63,25 @@
   line-height: 1;
   margin-bottom: 3px;
   margin-top: -0.15em;
-  word-break: break-word;
+  //word-break: break-word;
 }
 
+
+.breadcumb-layout1 { 
+    padding-top: 40px;
+    padding-bottom: 0px;  
+
+    @media (min-width: 1200px) {
+       padding-top: 200px;
+       padding-bottom: 0px;  
+    }
+}
 
 
 @include ml {
   .breadcumb-layout1 {
     &.pt-200.pb-200 {
-      padding-top: 150px;
-      padding-bottom: 150px;
+      padding-top: 150px; 
     }
 
     &.bg-fluid {
@@ -87,9 +101,8 @@
 @include md {
   .breadcumb-layout1 {
     &.pt-200.pb-200 {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
+      padding-top: 100px;  
+    } 
   }
 
   .breadcumb-menu-style1 {
@@ -108,8 +121,7 @@
 @include sm {
   .breadcumb-layout1 {
     &.pt-200.pb-200 {
-      padding-top: 80px;
-      padding-bottom: 80px;
+      padding-top: 80px; 
     }
   }
 
@@ -129,8 +141,7 @@
 @include xs {
   .breadcumb-layout1 {
     &.pt-200.pb-200 {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 20px; 
     }
   }
 
