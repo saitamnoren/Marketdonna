@@ -3,6 +3,35 @@
   padding-top: $space;
 }
 
+.space-to-marketplace {
+  padding-top: 60px !important;
+  
+  @media (min-width: 1199px) {
+    padding-top: 200px !important;
+  }
+}
+
+.space-to-nosotros {  
+  
+
+  @media (min-width: 1200px) {
+    padding-top: 170px !important; 
+  }
+  @media (min-width: 1300px) {
+    padding-top: 0px !important; 
+  }
+}
+
+.space-to-msg {
+  
+  @media (min-width: 992px) {
+    padding-top: 60px !important;
+  }
+  @media (min-width: 1199px) {
+    padding-top: 200px !important;
+  }
+}
+
 .space,
 .space-bottom {
   padding-bottom: $space;

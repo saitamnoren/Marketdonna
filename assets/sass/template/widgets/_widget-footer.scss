@@ -239,6 +239,7 @@
 
 .footer-widget .footer-links a:hover {
   color: $title-color;
+  color: #fcd55c;
 }
 
 
@@ -262,7 +263,7 @@
     font-size: var(--icon-font-size, 18);
     margin: 0 10px 0 0;
     background-color: $white-color;
-    color: $theme-color;
+    color: $theme-color2;
     text-align: center;
     border-radius: 50%;
   }

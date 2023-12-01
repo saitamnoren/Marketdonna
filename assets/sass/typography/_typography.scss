@@ -89,8 +89,18 @@ a {
 
 }
 .categoria-seleccionada{ 
-	&:hover {
-		background-color: #76a71330;
+
+	&:hover { 
+		background-color: #fcd55c5c;
+		background-color: #6095092e; 
+	}  
+	a { 
+		&:hover {
+			color: $theme-color3 !important; 
+			i {  
+				color: $theme-color3 !important; 
+			} 
+		} 
 	} 
 }
 
@@ -141,6 +151,7 @@ p {
 .h6, h6 {
 	font-family: $title-font;
 	color: $title-color;
+	color: $theme-color3;
 	font-weight: 700;
 	text-transform: none;
 	line-height: 1.3;

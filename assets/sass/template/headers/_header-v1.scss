@@ -331,12 +331,13 @@
     line-height: 40px;
     top: 2px;
     right: 2px;
-    background-color: $theme-color;
+    background-color: $theme-color2;
     color: $white-color;
     padding: 0;
 
     &:hover {
       background-color: $title-color !important;
+      background-color: $theme-color3 !important;
       color: $white-color !important;
     }
   }
@@ -465,13 +466,19 @@
 .header-buttons {
   >button,
   >a {
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+
     border: none;
     background-color: transparent;
-    padding: 0 15px 0 13px;
+    padding: 0;
+    margin: 0 7px 0 0;
+    border-radius: 50%; 
     color: $title-color;
-    font-size: 20px;
-    border-right: 1px solid #cdcdcd;
-    margin: 0;
+    font-size: 20px; 
+    
 
     &:last-child {
       padding-right: 0;
@@ -482,7 +489,16 @@
     &.has-badge {
       margin-right: 17px;
     }
+
+    &:hover {
+      background-color: $theme-color;
+      color: white;
+    }
+
+
   }
+
+
 
   .badge {
     font-size: 12px;
@@ -532,7 +548,7 @@
   left: 0;
   top: 0;
   right: 0;
-  background-color: var(--theme-color);
+  background-color: $theme-color2;
 
   .menu-area {
     background-color: $white-color;
@@ -769,7 +785,7 @@
 
   .header-layout5 {
     position: relative;
-    background-color: $theme-color;
+    background-color: $theme-color2;
   }
 
   .header-layout7 {

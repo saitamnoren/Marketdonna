@@ -4,6 +4,8 @@
   }
 }
 
+
+
 .fw-light {
   font-weight: 300;
 }
@@ -45,4 +47,9 @@
   .fs-20 {
     font-size: 18px;
   }
+}
+
+.font-theme-detalle {
+  font-size:18px !important;
+  color: $theme-color3 !important;
 }

@@ -85,7 +85,10 @@ Version: 1.0.0
     01. Variable
 ==================================*/
 :root {
-  --theme-color: #bdd239;
+  --theme-color3: #007234;
+  --theme-color2: #76a713;
+  --theme-color2: #609509;
+  --theme-color: #f78201;
   --title-color: #000000;
   --body-color: #858585;
   --body-color2: #959595;
@@ -111,7 +114,7 @@ Version: 1.0.0
 .home-7:not(.plate-color),
 .home-8:not(.plate-color),
 .home-6:not(.plate-color) {
-  --theme-color: rgba(118, 167, 19, 1);
+  --theme-color: #f78201;
 }
 
 /*=================================
@@ -207,7 +210,14 @@ a:hover {
 }
 
 .categoria-seleccionada:hover {
-  background-color: rgba(118, 167, 19, 0.1882352941);
+  background-color: rgba(252, 213, 92, 0.3607843137);
+  background-color: rgba(96, 149, 9, 0.1803921569);
+}
+.categoria-seleccionada a:hover {
+  color: var(--theme-color3) !important;
+}
+.categoria-seleccionada a:hover i {
+  color: var(--theme-color3) !important;
 }
 
 a:active,
@@ -255,6 +265,7 @@ p {
 .h6, h6 {
   font-family: var(--theme-font);
   color: var(--title-color);
+  color: var(--theme-color3);
   font-weight: 700;
   text-transform: none;
   line-height: 1.3;
@@ -529,7 +540,7 @@ input.form-control[type=number] {
 }
 
 textarea.form-control {
-  min-height: 180px;
+  min-height: 150px;
   padding-top: 10px;
   padding-bottom: 17px;
 }
@@ -1167,6 +1178,7 @@ textarea.form-control.is-invalid {
   position: absolute;
   z-index: -1;
   background-color: var(--title-color);
+  background-color: var(--theme-color3);
   left: auto;
   right: 0;
   top: 0;
@@ -1264,6 +1276,13 @@ textarea.form-control.is-invalid {
 .vs-btn.style6:hover i {
   background-color: var(--white-color);
   color: var(--title-color);
+}
+
+.vs-btn-wa {
+  background-color: var(--theme-color3);
+}
+.vs-btn-wa:after {
+  background-color: var(--theme-color);
 }
 
 .icon-btn {
@@ -2437,6 +2456,7 @@ ul.product_list_widget .amount {
 
 .footer-widget .footer-links a:hover {
   color: var(--title-color);
+  color: #fcd55c;
 }
 
 .copyright-social a {
@@ -2456,7 +2476,7 @@ ul.product_list_widget .amount {
   font-size: var(--icon-font-size, 18);
   margin: 0 10px 0 0;
   background-color: var(--white-color);
-  color: var(--theme-color);
+  color: var(--theme-color2);
   text-align: center;
   border-radius: 50%;
 }
@@ -3194,12 +3214,13 @@ ul.product_list_widget .amount {
   line-height: 40px;
   top: 2px;
   right: 2px;
-  background-color: var(--theme-color);
+  background-color: var(--theme-color2);
   color: var(--white-color);
   padding: 0;
 }
 .header-search .icon-btn:hover {
   background-color: var(--title-color) !important;
+  background-color: var(--theme-color3) !important;
   color: var(--white-color) !important;
 }
 .header-search.style2 {
@@ -3305,13 +3326,16 @@ ul.product_list_widget .amount {
 
 .header-buttons > button,
 .header-buttons > a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border: none;
   background-color: transparent;
-  padding: 0 15px 0 13px;
+  padding: 0;
+  margin: 0 7px 0 0;
+  border-radius: 50%;
   color: var(--title-color);
   font-size: 20px;
-  border-right: 1px solid #cdcdcd;
-  margin: 0;
 }
 .header-buttons > button:last-child,
 .header-buttons > a:last-child {
@@ -3322,6 +3346,11 @@ ul.product_list_widget .amount {
 .header-buttons > button.has-badge,
 .header-buttons > a.has-badge {
   margin-right: 17px;
+}
+.header-buttons > button:hover,
+.header-buttons > a:hover {
+  background-color: var(--theme-color);
+  color: white;
 }
 .header-buttons .badge {
   font-size: 12px;
@@ -3357,7 +3386,7 @@ ul.product_list_widget .amount {
   left: 0;
   top: 0;
   right: 0;
-  background-color: var(--theme-color);
+  background-color: var(--theme-color2);
 }
 .header-layout5 .menu-area {
   background-color: var(--white-color);
@@ -3534,7 +3563,7 @@ ul.product_list_widget .amount {
   }
   .header-layout5 {
     position: relative;
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
   }
   .header-layout7 .header-top-shape {
     height: 100%;
@@ -5262,6 +5291,8 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
   max-width: 500px;
   line-height: 1.1;
   margin-bottom: 25px;
+  background-color: rgba(247, 130, 1, 0.7019607843);
+  padding: 10px;
 }
 .hero-box1 .sub-title1 {
   letter-spacing: 1.2em;
@@ -5279,6 +5310,8 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
   text-transform: uppercase;
   font-size: 32px;
   margin-bottom: 10px;
+  background-color: rgba(247, 130, 1, 0.7019607843);
+  padding: 10px;
 }
 .hero-box2 .box-subtitle {
   font-weight: 300;
@@ -7259,7 +7292,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
   color: inherit;
 }
 .vs-product-box3 .price {
-  color: #76a713;
+  color: var(--theme-color);
   font-family: var(--theme-font2);
   font-size: 15px;
 }
@@ -7866,6 +7899,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
   background-color: transparent;
   display: block;
   text-align: left;
+  padding: 36px 30px 36px 32px;
   margin: 10px 0 10px 0;
   position: relative;
   width: 100%;
@@ -7969,6 +8003,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
 @media (max-width: 1199px) {
   .filter-menu4 button {
     padding: 25px 30px 25px 120px;
+    padding: 25px 30px 25px 32px;
   }
   .filter-menu4 button img {
     max-width: 105px;
@@ -7980,7 +8015,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
     margin-bottom: 35px;
   }
   .filter-menu4 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 25px;
   }
   .filter-menu4 button {
@@ -8003,6 +8038,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
   }
   .filter-menu4 button {
     padding: 25px 30px 25px 100px;
+    padding: 25px 30px 25px 32px;
     max-width: 45%;
     display: inline-block;
   }
@@ -8030,6 +8066,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
   .filter-menu4 button {
     max-width: 95%;
     padding: 20px 30px 20px 100px;
+    padding: 20px 30px 20px 32px;
   }
   .filter-menu4 button:before {
     top: 0;
@@ -9454,6 +9491,7 @@ blockquote.wp-block-quote.has-text-align-right cite:before {
 }
 .cart_table .remove {
   color: #29af8a;
+  color: #6c757d;
   font-size: 18px;
 }
 .cart_table .quantity {
@@ -10174,6 +10212,7 @@ table.woocommerce-grouped-product-list.group_table td {
   display: block;
   text-align: left;
   padding: 17px 30px;
+  color: var(--theme-color3);
   color: var(--title-color);
   margin-bottom: 25px;
 }
@@ -10193,12 +10232,12 @@ table.woocommerce-grouped-product-list.group_table td {
   padding: 0;
 }
 .vs-box-nav > ul > li {
-  margin: 20px 0;
+  margin: 0px 0;
   position: relative;
 }
 .vs-box-nav > ul > li > a {
   font-size: 16px;
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 .vs-box-nav li.menu-item-has-children > a:after {
   content: "\f107";
@@ -10244,6 +10283,7 @@ table.woocommerce-grouped-product-list.group_table td {
   margin-left: 0;
 }
 .vs-box-nav a:not(.vs-btn) {
+  color: var(--theme-color3);
   color: var(--title-color);
   font-weight: 600;
   position: relative;
@@ -10254,7 +10294,9 @@ table.woocommerce-grouped-product-list.group_table td {
   vertical-align: middle;
   width: 39px;
   display: inline-block;
-  color: #007234;
+  color: #3d6666;
+  color: #f78201;
+  color: var(--theme-color2);
   transition: inherit;
 }
 .vs-box-nav a:not(.vs-btn).active,
@@ -10298,9 +10340,6 @@ table.woocommerce-grouped-product-list.group_table td {
   .box-nav-wrap {
     max-width: 100%;
     height: auto;
-  }
-  .box-nav-wrap > .vs-box-nav {
-    display: none;
   }
   .box-nav-btn:after {
     display: block;
@@ -10905,6 +10944,11 @@ table.woocommerce-grouped-product-list.group_table td {
     font-size: 18px;
   }
 }
+.font-theme-detalle {
+  font-size: 18px !important;
+  color: var(--theme-color3) !important;
+}
+
 /*------------------- 9.2. Background -------------------*/
 .bg-theme {
   background-color: var(--theme-color) !important;
@@ -10944,6 +10988,17 @@ table.woocommerce-grouped-product-list.group_table td {
 
 .bg-body {
   background-color: var(--body-color) !important;
+}
+
+.bg-theme-2 {
+  background-color: var(--theme-color2) !important;
+}
+
+.bg-monto-pago {
+  background-color: rgba(252, 213, 92, 0.3607843137) !important;
+  background-color: #f9fbfb !important;
+  color: black;
+  font-size: 32px !important;
 }
 
 [data-bg-src] {
@@ -11239,6 +11294,13 @@ table.woocommerce-grouped-product-list.group_table td {
   animation-iteration-count: infinite;
 }
 
+.ani-moving-y-wa {
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: moving-y-wa;
+}
+
 .ani-moving {
   animation-name: moving;
 }
@@ -11353,6 +11415,17 @@ table.woocommerce-grouped-product-list.group_table td {
     transform: translate(0px, 0px);
   }
 }
+@keyframes moving-y-wa {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes moving-y {
   0% {
     transform: translate(0px, 0px);
@@ -11440,12 +11513,43 @@ table.woocommerce-grouped-product-list.group_table td {
 ==================================*/
 .space,
 .space-top {
-  padding-top: 130px;
+  padding-top: 90px;
+}
+
+.space-to-marketplace {
+  padding-top: 60px !important;
+}
+@media (min-width: 1199px) {
+  .space-to-marketplace {
+    padding-top: 200px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .space-to-nosotros {
+    padding-top: 170px !important;
+  }
+}
+@media (min-width: 1300px) {
+  .space-to-nosotros {
+    padding-top: 0px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .space-to-msg {
+    padding-top: 60px !important;
+  }
+}
+@media (min-width: 1199px) {
+  .space-to-msg {
+    padding-top: 200px !important;
+  }
 }
 
 .space,
 .space-bottom {
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .space-md,
@@ -12563,12 +12667,43 @@ table.woocommerce-grouped-product-list.group_table td {
 
 .space,
 .space-top {
-  padding-top: 130px;
+  padding-top: 90px;
+}
+
+.space-to-marketplace {
+  padding-top: 60px !important;
+}
+@media (min-width: 1199px) {
+  .space-to-marketplace {
+    padding-top: 200px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .space-to-nosotros {
+    padding-top: 170px !important;
+  }
+}
+@media (min-width: 1300px) {
+  .space-to-nosotros {
+    padding-top: 0px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .space-to-msg {
+    padding-top: 60px !important;
+  }
+}
+@media (min-width: 1199px) {
+  .space-to-msg {
+    padding-top: 200px !important;
+  }
 }
 
 .space,
 .space-bottom {
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .space-md,

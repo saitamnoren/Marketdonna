@@ -143,10 +143,11 @@
 .filter-menu4 {
   button {
     border: none;
-    background-color: transparent;
+    background-color: transparent; 
     display: block;
     text-align: left;
-    //padding: 36px 30px 36px 140px;
+    padding: 36px 30px 36px 32px;
+
     margin: 10px 0 10px 0;
     position: relative;    
     width: 100%;
@@ -278,7 +279,7 @@
   .filter-menu4 {
     button {
       padding: 25px 30px 25px 120px;
-
+      padding: 25px 30px 25px 32px; 
       img {
         max-width: 105px;
       }
@@ -292,7 +293,7 @@
   }
 
   .filter-menu4 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 25px;
 
     button {
@@ -323,6 +324,7 @@
   .filter-menu4 {
     button {
       padding: 25px 30px 25px 100px;
+      padding: 25px 30px 25px 32px;
       max-width: 45%;
       display: inline-block;
 
@@ -358,6 +360,7 @@
     button {
       max-width: 95%;
       padding: 20px 30px 20px 100px;
+      padding: 20px 30px 20px 32px;
       
       &:before {
         top: 0;

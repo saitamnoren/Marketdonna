@@ -22,6 +22,7 @@
     position: absolute;
     z-index: -1;
     background-color: $title-color;
+    background-color: $theme-color3;
     left: auto;
     right: 0;
     top: 0;
@@ -147,6 +148,15 @@
   }
 
 }
+
+ 
+.vs-btn-wa {
+  background-color: $theme-color3;
+
+  &:after {
+    background-color: $theme-color;
+  }
+} 
 
 
 // Icon Button
@@ -385,3 +395,5 @@
     margin-top: 40px;
   }
 }
+
+

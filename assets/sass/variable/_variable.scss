@@ -1,5 +1,8 @@
 :root {
-  --theme-color       : #bdd239;
+  --theme-color3       : #007234;
+  --theme-color2       : #76a713;
+  --theme-color2       : #609509; 
+  --theme-color       : #f78201;
   --title-color       : #000000;
   --body-color        : #858585;
   --body-color2       : #959595;
@@ -24,6 +27,8 @@
 }
 
 // Color Variation
+$theme-color3          : var(--theme-color3);
+$theme-color2          : var(--theme-color2);
 $theme-color          : var(--theme-color);
 $title-color          : var(--title-color);
 $body-color           : var(--body-color);
@@ -64,6 +69,8 @@ $xs: 576px;
 
 $space-count: 20; // Spacing Count with 5x
 $space : 130px; // Section Space  For large Device
+$space : 90px; // Section Space  For large Device
+
 $space-medium: 100px;
 $space-md : 60px; // Section Space On small Device
 $space-medium-md: 30px;
@@ -118,6 +125,6 @@ $fontsMap : map-merge((
 .home-8,
 .home-6 {
   &:not(.plate-color) {    
-    --theme-color : rgba(118, 167, 19, 1); 
+    --theme-color : #f78201; 
   }
 }

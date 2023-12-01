@@ -26,7 +26,10 @@
   display: block;
   text-align: left;
   padding: 17px 30px;
+ 
+  color: $theme-color3; //here
   color: $title-color;
+  
   margin-bottom: 25px;
 
   &:after {
@@ -50,12 +53,12 @@
 
   >ul {
     >li {
-      margin: 20px 0;
+      margin: 0px 0;
       position: relative;
 
       >a {
         font-size: 16px;
-        padding: 0 30px;
+        padding: 20px 30px;
       }
     }
   }
@@ -126,7 +129,9 @@
 
 
   a:not(.vs-btn) {
-    color: $title-color;
+    
+    color: $theme-color3;
+    color: $title-color; //here
     font-weight: 600;
     position: relative;
     display: block;
@@ -137,6 +142,8 @@
       width: 39px;
       display: inline-block;
       color: #3d6666;
+      color: #f78201;
+      color: $theme-color2;
       transition: inherit;
     }
 
@@ -197,7 +204,7 @@
     height: auto;
 
     >.vs-box-nav {
-      display: none;
+      //display: none;
     }
   }
 

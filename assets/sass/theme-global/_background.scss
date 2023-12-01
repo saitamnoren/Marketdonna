@@ -4,6 +4,16 @@
   }
 }
 
+.bg-theme-2 {
+  background-color: $theme-color2 !important;
+}
+.bg-monto-pago {
+  background-color: #fcd55c5c !important;
+  background-color: #f9fbfb !important; 
+  color: black;
+  font-size: 32px !important;
+}
+
 [data-bg-src] {
   @include background-content(no-repeat, cover, center center);
 }
